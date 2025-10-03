@@ -46,14 +46,15 @@ header nav {
 .card { background: white; border-radius: var(--radius); padding: 20px; box-shadow: var(--card-shadow); transition: transform 0.3s, box-shadow 0.3s; }
 .card:hover { transform: translateY(-5px); box-shadow: 0 12px 25px rgba(0,0,0,0.15); }
 
-.service-icon { width: 56px; height: 56px; border-radius: var(--radius); display: grid; place-items: center; font-weight: 700; color: white; }
+.service-icon { width: 56px; height: 56px; border-radius: var(--radius); display: grid; 
+               place-items: center; font-weight: 100; color: white; }
 .service-card .wd { background: linear-gradient(90deg,var(--primary),var(--accent)); }
 .service-card .ui { background: linear-gradient(90deg,#7b61ff,#ff7ab6); }
 .service-card .cl { background: linear-gradient(90deg,#00b37e,#00d4ff); }
 
 .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px,1fr)); gap: 12px; }
 figure { overflow: hidden; border-radius: var(--radius); }
-figure img { width: 300px; height:300px; object-fit: cover; transition: transform 0.35s; }
+figure img { width: 100px; height:100px; object-fit: cover; transition: transform 0.35s; }
 figure:hover img { transform: scale(1.05); }
 
 .contact-grid { display: grid; grid-template-columns: 1fr 380px; gap: 20px; }
@@ -69,4 +70,5 @@ footer { text-align: center; padding: 20px; margin-top: 40px; color: var(--muted
 @media(min-width:900px){
   .hero { grid-template-columns: 1fr 400px; }
 }
+
 
